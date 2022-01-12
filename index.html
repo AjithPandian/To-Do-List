@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="header-align">
+                <span class="card-title">To Do List</span>
+            </div>
+            <div class="task-add">
+                <form id="task-form">
+                    <div class="input-field">
+                        <label for="task" class="task-heading">List Title</label>
+                        <input type="text" name="task" id="task" class="task-input">
+                        <label for="list-items" class="task-list-heading">Items to be added</label>
+                    </div>
+                    <div class="adding-items-align">
+                        <span class="add-items">+</span>
+                        <input type="submit" value="Add to List" class="btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="to-do-items">
+            <h1 style="text-align: center;">Task Items</h1>
+            <div class="row tasks-align" id="todo-List-container">
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
